@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/user0/Project-Files-Synced/TAC/JP280C/JP280C1.sch)
-    (date "Do 26 Nov 2020 20:19:17 CET")
+    (date "Do 26 Nov 2020 22:32:28 CET")
     (tool "Eeschema 5.1.7-a382d34a8~87~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
