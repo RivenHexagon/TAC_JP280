@@ -113,17 +113,6 @@ F 3 "~" H 1700 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
-U 1 1 5FBDDB52
-P 3400 4350
-F 0 "R2" V 3500 4350 50  0000 C CNN
-F 1 "1k" V 3400 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 4350 50  0001 C CNN
-F 3 "~" H 3400 4350 50  0001 C CNN
-	1    3400 4350
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5FBDE19C
 P 4000 4950
@@ -242,12 +231,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4950 4750 4950
 Wire Wire Line
-	4750 1950 4150 1950
-Wire Wire Line
-	4150 1950 4150 4350
-Wire Wire Line
-	4150 4350 4750 4350
-Wire Wire Line
 	4750 1550 2500 1550
 Wire Wire Line
 	2500 1550 2500 3950
@@ -265,8 +248,6 @@ Wire Wire Line
 	2700 1750 2700 1950
 Wire Wire Line
 	2700 1950 1900 1950
-Wire Wire Line
-	4750 1850 2800 1850
 Wire Wire Line
 	2800 1850 2800 2950
 Wire Wire Line
@@ -303,9 +284,6 @@ F 3 "" H 3150 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 4350 4150 4350
-Connection ~ 4150 4350
-Wire Wire Line
 	3750 4350 3650 4350
 Wire Wire Line
 	3650 4350 3650 4250
@@ -325,11 +303,6 @@ $EndComp
 Wire Wire Line
 	3650 4950 3750 4950
 Connection ~ 3750 4950
-Wire Wire Line
-	3550 4350 3650 4350
-Connection ~ 3650 4350
-Wire Wire Line
-	3250 4350 3150 4350
 Wire Wire Line
 	3150 4350 3150 4950
 Wire Wire Line
@@ -352,4 +325,44 @@ NoConn ~ 1900 1850
 NoConn ~ 1900 2050
 Connection ~ 2000 4650
 Connection ~ 3150 4950
+Connection ~ 3650 4350
+Wire Wire Line
+	3250 4350 3150 4350
+Wire Wire Line
+	3550 4350 3650 4350
+$Comp
+L Device:R R2
+U 1 1 5FBDDB52
+P 3400 4350
+F 0 "R2" V 3500 4350 50  0000 C CNN
+F 1 "1k" V 3400 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 4350 50  0001 C CNN
+F 3 "~" H 3400 4350 50  0001 C CNN
+	1    3400 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 1950 4150 1950
+Wire Wire Line
+	4750 1850 2800 1850
+$Comp
+L Device:R R0
+U 1 1 5FC1434D
+P 4150 2300
+F 0 "R0" V 4250 2300 50  0000 C CNN
+F 1 "0R" V 4150 2300 50  0000 C CNN
+F 2 "TAC:Wire_Bridge_P7.62mm_Horizontal" V 4080 2300 50  0001 C CNN
+F 3 "~" H 4150 2300 50  0001 C CNN
+	1    4150 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 4350 4150 4350
+Wire Wire Line
+	4150 4350 4750 4350
+Connection ~ 4150 4350
+Wire Wire Line
+	4150 1950 4150 2150
+Wire Wire Line
+	4150 2450 4150 4350
 $EndSCHEMATC
