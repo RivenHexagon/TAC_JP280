@@ -15,3 +15,9 @@ I named the new versions JP280C1 & JP280C2 and made them with KiCad 5.1.7. using
 a git submodule that handles any special footprints:
 
 https://github.com/RivenHexagon/TAC_KiCad_lib.git
+
+## Further Modifications
+
+The XLR/audio jacks SK1 - SK4 are mounted to the back panel and were then solder
+wired to the PCB. The solder connections have now been replaced with 3-pin Molex
+connectors.
